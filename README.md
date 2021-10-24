@@ -1,7 +1,6 @@
 
-#  **<span style="color:green">Mithun Technologies, Marathahalli ,Bengaluru.</span>**
-### **<span style="color:green">Contacts: +91-9980923226, +91-8296242028<br> WebSite : <http://mithuntechnologies.co.in/></span>**
-### **Email: devopstrainingblr@gmail.com, devopstrainingblr@outlook.com**
+#  **<span style="color:green">Radha Rajamoni</span>**
+
 
 
 ## **Agenda: Infrastructure Automation Using Terraform And K8's Cluster Configuration Using Ansible With Dynamic Inventory.**
@@ -73,13 +72,13 @@ $ terraform apply --auto-approve terafrom_scripts/
 $ chmod +x DynamicInventory.py
 #Add default Region so that DynamicInventory will fetch host details from that Region.
 # temporally
-$ export AWS_DEFAULT_REGION=ap-south-1
+$ export AWS_DEFAULT_REGION=us-west-1
 # Or Permanently
 #Create config file in current user .aws folder And below content.
 $ mkdir ~/.aws
 $ vi ~/.aws/config
 [default]
-region=ap-south-1
+region=us-west-1
 
 $ ./DynamicInventory.py --list
 ```
@@ -88,8 +87,8 @@ $ ./DynamicInventory.py --list
 </span>
 
 ```sh
-$ vi DevOps.pem
-$ chmod 400 DevOps.pem
+$ vi ansible1.pem
+$ chmod 400 ansible1.pem
 ```
 - ###### <span style="color:orange">Replace \<Pemfile> with your pemfile path in server
 </span>

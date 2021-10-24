@@ -48,7 +48,7 @@ $ pip3 install boto3 --user
 
 #### Clone terraform and ansible scripts
 ``` sh
-$ git clone https://github.com/MithunTechnologiesDevOps/Kuberentes_Cluster_Terraform_Ansible.git
+$ git clone https://github.com/radhasab/Kuberentes_Cluster_Terraform_Ansible.git
 $ cd Kuberentes_Cluster_Terraform_Ansible
 ```
 ###### <span style="color:orange"> Update Your Key Name in variables.tf file before executing terraform script </span>
@@ -56,9 +56,9 @@ $ cd Kuberentes_Cluster_Terraform_Ansible
 #### Create Infrastructure(VPC,Subnets,Route Tables,EC2 Instnaces ..etc) As A Code Using Terraform Scripts
 ``` sh
 # Initialise to install plugins
-$ terraform init terafrom_scripts/
+$ terraform -chdir=./terafrom_scripts/ init -input=false -backend=false
 # Validate teffaform scripts
-$ terraform validate terafrom_scripts/
+$ terraform -chdir=./terafrom_scripts/ validate
 # Plan terraform scripts which will list resouce which will be created
 $ terraform plan terafrom_scripts/
 # Apply to create resources

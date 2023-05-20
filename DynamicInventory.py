@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python3
 # Shebang Line Should Point Python Installation Path
 """
 

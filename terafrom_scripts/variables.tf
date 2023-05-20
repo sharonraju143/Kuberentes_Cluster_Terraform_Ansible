@@ -1,9 +1,9 @@
 variable "aws_region" {
-  default = "us-west-1"
+  default = "us-east-2"
 }
 
 variable "key_name" {
-  default = "ansible1"
+  default = "k8s"
 }
 variable "vpc_cidr" {
   default = "172.0.0.0/24"

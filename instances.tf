@@ -1,4 +1,4 @@
-resource "aws_instance" "kubernetes_Masters" {
+resource "aws_instance" "kubernetes_Master" {
   count                  = 1
   ami                    = var.kubernetes_ami
   instance_type          = var.master_instance_type

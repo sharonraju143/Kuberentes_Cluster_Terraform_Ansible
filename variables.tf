@@ -14,14 +14,14 @@ variable "subnets_cidr" {
 }
 variable "availability_zones" {
   type    = list(string)
-  default = ["us-west-1a", "us-west-1b"]
+  default = ["us-east-2a", "us-east-2b"]
 }
 variable "kubernetes_ami" {
   default = "ami-054965c6cd7c6e462"
 }
 variable "master_instance_type" {
-  default = "t2.micro"
+  default = "t2.medium"
 }
 variable "worker_instance_type" {
-  default = "t2.micro"
+  default = "t2.medium"
 }
